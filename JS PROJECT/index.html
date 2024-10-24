@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Personal Finance Tracker</h1>
+           
+        </header>
+        <div class="balance">
+            <h2>Balance: Rs <span id="balanceAmount">0.00</span></h2>
+        </div>
+        <div class="transaction-input">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="transactionType">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="addTransactionBtn">Add Transaction</button>
+        </div>
+        <div class="transaction-summary">
+            <div id="incomeSummary">
+                <h3>Total Income: Rs <span id="totalIncome">0.00</span></h3>
+            </div>
+            <div id="expenseSummary">
+                <h3>Total Expense: Rs <span id="totalExpense">0.00</span></h3>
+            </div>
+        </div>
+        <div id="transactionList" class="transaction-list">
+            <!-- Transactions will appear here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
